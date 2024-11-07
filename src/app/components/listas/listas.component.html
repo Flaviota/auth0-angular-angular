@@ -1,0 +1,9 @@
+
+<app-add-lista (onAddTask)="AddTask($event)"> </app-add-lista>
+<app-lista-item *ngFor="let tarefa of tarefas" 
+[tarefa] = "tarefa" 
+(onDeleteTask)="deleteTask($event)"
+(onToggleConcluido)="onToggleConcluido($event)"
+>
+
+</app-lista-item>
