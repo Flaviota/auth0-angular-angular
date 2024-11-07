@@ -1,7 +1,7 @@
 @if(mostrarAddTarefa){
    <app-button text="Fechar" color="red" (btnClick)="AlteraVisualizacao(false)"></app-button>
 }@else {
-    <app-button text="Adicionar tarefa" color="green" (btnClick)="AlteraVisualizacao(true)"></app-button>
+    <app-button text="Adicionar lista" color="green" (btnClick)="AlteraVisualizacao(true)"></app-button>
 }
 
 <form (ngSubmit)="onSubmit()" *ngIf="mostrarAddTarefa" class="add-form">
@@ -11,7 +11,7 @@
         type="text" 
         name="text" 
         class="form-control" 
-        placeholder="Adicionar tarefa"
+        placeholder="Adicionar descrição de lista"
         id="text"
         [(ngModel)]="tarefa">
     </div>
@@ -27,6 +27,6 @@
                 <option value="lazer">Lazer</option>
             </select>
         </div>
-    <input type="submit" value="Salvar tarefa" class="btn btn-block mb-4">
+    <input type="submit" value="Salvar lista" class="btn btn-block mb-4">
 
 </form>

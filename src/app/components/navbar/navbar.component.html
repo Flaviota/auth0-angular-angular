@@ -1,7 +1,7 @@
 <nav>
     <ul>
-        <li><a routerLink="/">Home - Minhas compras</a></li>
-        <li><a routerLink="/profile">Profile</a></li>
+        <li><a routerLink="/">Minhas listas</a></li>
+        <li><a routerLink="/profile">Perfil</a></li>
     </ul>
     <div>
         @if(auth.isAuthenticated$ | async){
@@ -9,7 +9,7 @@
             Log out
         </button>
         } @else {
-        <button (click)="auth.loginWithRedirect()">Log in aqui</button>
+        <button (click)="auth.loginWithRedirect()">Fazer login</button>
         }
     </div>
 </nav>

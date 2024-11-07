@@ -21,7 +21,6 @@ export class AddListaComponent {
 
 
   onSubmit() {
-    //alerta de adicione uma tarefa
     if(!this.tarefa) {
       alert('Adicione a tarefa!')
       return;
@@ -38,7 +37,6 @@ export class AddListaComponent {
     this.tarefa = '';
     this.categoria = '';
     this.concluido = false;
-
   }
 
   AlteraVisualizacao(valor: boolean){

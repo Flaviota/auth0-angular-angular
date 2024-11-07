@@ -16,7 +16,6 @@ export class ListasComponent implements OnInit {
 
   tarefas: Tarefa[] = [];
 
-  //constutor -  aqui eu consigo utilizar todos o meus serviços graças ao taskservice
   constructor(private taskService: ListacomprasService){}
 
   ngOnInit(): void{

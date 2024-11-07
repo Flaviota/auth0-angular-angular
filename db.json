@@ -2,13 +2,19 @@
   "tasks": [
     {
       "id": "2",
-      "tarefa": "Estudar angular",
+      "tarefa": "Comprar cadernos de anotação",
       "categoria": "Trabalho",
       "concluido": true
     },
     {
       "id": "7318",
-      "tarefa": "teste1",
+      "tarefa": "Comprar desinfetante",
+      "categoria": "casa",
+      "concluido": false
+    },
+    {
+      "id": "3545",
+      "tarefa": "Comprar arroz integral",
       "categoria": "casa",
       "concluido": false
     }
